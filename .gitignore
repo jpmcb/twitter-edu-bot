@@ -1,0 +1,8 @@
+# .gitignore
+.gitignore
+
+# Dependency directories in node
+node_modules/
+
+# The TODO list
+_TODO.md
