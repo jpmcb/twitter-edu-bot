@@ -98,4 +98,5 @@ class_schedules = db.class_schedule.find()
 for c in class_schedules:
 	for assignment in c['schedule']:		
 		if is_due(c['schedule'][assignment]):
+			# Indicates if assignment is due soon, this is where the twitter API will be used...
 			print assignment + " for " + c['class'] + " is due on " + c['schedule'][assignment]
