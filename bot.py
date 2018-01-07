@@ -15,7 +15,7 @@ schedule = db.class_schedule
 
 # CS 161 Schedule
 data1 = {
-	'class': 'CS 161',
+	'class': '161',
 	'schedule': {
 		'Assignment 1': '01/14/2018',
 		'Assignment 2': '01/21/2018',
@@ -32,7 +32,7 @@ data1 = {
 
 # CS 162 Schedule
 data2 = {
-	'class': 'CS 162',
+	'class': '162',
 	'schedule': {
 		'Assignment 1': '01/14/2018',
 		'Assignment 2': '01/21/2018',
@@ -49,7 +49,7 @@ data2 = {
 
 # CS 225 Schedule
 data3 = {
-	'class': 'CS 225',
+	'class': '225',
 	'schedule': {
 		'Assignment 1': '01/14/2018',
 		'Assignment 2': '01/21/2018',
