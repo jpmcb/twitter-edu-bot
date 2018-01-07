@@ -29,6 +29,9 @@ app.use(bodyParser.urlencoded({
 	extended: true
 }));
 
+// For the path to the public folder in the express fild tree
+app.use(express.static(__dirname + '/public'));
+
 
 // -----------------------
 // Generates the database for the twitter handles

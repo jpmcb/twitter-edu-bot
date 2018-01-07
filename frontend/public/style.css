@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
+
+body {
+	font-family: 'Encode Sans Expanded', sans-serif;
+	background-color: #aec7ef;
+	text-align: center;
+	margin: auto;
+	padding: 55px;
+}
+
+body form{
+	margin-top: 25px;
+	padding: 5px;
+}
+
+input {
+	margin: 3px;
+	padding: 5px;
+	text-align: center;
+}
+
+select {
+	text-align: center;
+	margin-top: 15px;
+}
+
+p {
+	margin-top: 15px;
+}
+
+input[type="submit"] {
+	border: 3px;
+	background: white;
+	margin-top: 5px;
+	border-radius: 5px;
+	width: 20em;
+	height: 3em;
+}
+
+input[type="submit"]:hover {
+	background-color: #d1e2ff;
+}
