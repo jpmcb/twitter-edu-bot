@@ -125,13 +125,14 @@ def grab_handles(course):
 class_schedules = db.class_schedule.find()
 
 # Go through each class schedule, and determine if any assignments are due soon
-for c in class_schedules:
-	enrolled_students = grab_handles(c['class'])
+for course in class_schedules:
+	# Get the student handles enrolled in course c
+	enrolled_students = grab_handles(course['class'])
 
-	for assignment in c['schedule']:
-		if is_due(c['schedule'][assignment]):
+	for assignment in course['schedule']:
+		if is_due(course['schedule'][assignment]):
 			for s in enrolled_students:
 				print s['handle'] + ", ",
 			
 				# Indicates if assignment is due soon, this is where the twitter API will be used...
-				print assignment + " for " + c['class'] + " is due on " + c['schedule'][assignment]
+				print assignment + " for " + course['class'] + " is due on " + course['schedule'][assignment]
