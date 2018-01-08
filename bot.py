@@ -6,6 +6,11 @@ import tweepy
 from pymongo import MongoClient
 from credentials import *
 
+consumer_key = 'XkoHqlQQI9vNNfOu8qHEl7k9R'
+consumer_secret = 'tFCcPGrhr4Bni4zM43rN0JbbyOMxFh22Y24bQyS6cDAP5Pq2aK'
+access_token = '949798552489705472-IPApLZMdATiNJDhPWVgvduXW6vb3cXH'
+access_secret = 'GvDE9HLFTVZNG7pGp1qUw2cqYPwbfoiZQfdnYM33zxWnK'
+
 # OAuthHandler instance, required by Twitter for authentication
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
@@ -14,10 +19,10 @@ auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth)
 
 # Connect to Mongo
-client = MongoClient('mongodb://localhost:27017')
+client = MongoClient('mongodb://heroku_wwpzkm46:96ichdg7jpbqvn7rj90nuaccvf@ds245277.mlab.com:45277/')
 
 # Establish the db
-db = client.twitterEdu
+db = client.heroku_wwpzkm46
 
 # Establish the class_schedule collection
 schedule = db.class_schedule
