@@ -1,8 +1,18 @@
 #!/usr/bin/python
 
+import json
+from twitter import Twitter, OAuth, TwitterHTTPError, TwitterStream
 import time
 import datetime
 from pymongo import MongoClient
+
+ACCESS_TOKEN = 'YOUR ACCESS TOKEN"'
+ACCESS_SECRET = 'YOUR ACCESS TOKEN SECRET'
+CONSUMER_KEY = '3YKUawnwO6QC4pqLxvhv7GXc7'
+CONSUMER_SECRET = 'udEtQha3G62JRxcECecgLp1snihdAMvA7sL2OFKgIFjYFnEOX9'
+
+oauth = OAuth(ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET)
+
 
 # Connect to Mongo
 client = MongoClient('mongodb://localhost:27017')
