@@ -9,10 +9,10 @@ var port = process.env.PORT || 8080;
 var mongo = require('mongodb').MongoClient;
 
 // The database name
-const dbName = "twitterEdu";
+const dbName = "heroku_wwpzkm46";
 
 // Local environment port
-var url = "mongodb://localhost:27017/" + dbName;
+var url = "mongodb://heroku_wwpzkm46:96ichdg7jpbqvn7rj90nuaccvf@ds245277.mlab.com:45277/" + dbName;
 
 
 // -----------------------
