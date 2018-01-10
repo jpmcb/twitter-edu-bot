@@ -8,10 +8,10 @@ var port = process.env.PORT || 8080;
 // The node mongo client 
 var mongo = require('mongodb').MongoClient;
 
-// The database name
-const dbName = "heroku_wwpzkm46";
-
 var importCred = require('./credentials.json');
+
+// The database name
+const dbName = importCred.dbName;
 
 // Local environment port
 var url = importCred.database + dbName;
