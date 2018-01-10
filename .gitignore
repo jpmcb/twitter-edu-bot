@@ -6,3 +6,6 @@ node_modules/
 
 # The TODO list
 _TODO.md
+
+# The credentials file needed to access the DB
+frontend/credentials.json
