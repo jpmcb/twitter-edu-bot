@@ -4,7 +4,7 @@ import time
 import datetime
 import tweepy
 from pymongo import MongoClient
-from credentials import * 
+# from credentials import * 
 
 consumer_key = 'XkoHqlQQI9vNNfOu8qHEl7k9R'
 consumer_secret = 'tFCcPGrhr4Bni4zM43rN0JbbyOMxFh22Y24bQyS6cDAP5Pq2aK'
