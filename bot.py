@@ -4,7 +4,7 @@ import time
 import datetime
 import tweepy
 from pymongo import MongoClient
-from credentials import *
+from credentials import * 
 
 # OAuthHandler instance, required by Twitter for authentication
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -14,13 +14,19 @@ auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth)
 
 # Connect to Mongo
-client = MongoClient('mongodb://localhost:27017')
+client = MongoClient(mongo_access)
+
+dbName = mong_dbName
 
 # Establish the db
-db = client.twitterEdu
+db = client.dbName
+
+print(db.twitter_handles)
 
 # Establish the class_schedule collection
 schedule = db.class_schedule
+
+print(db.class_schedule)
 
 # The schedule for all classes
 data = [

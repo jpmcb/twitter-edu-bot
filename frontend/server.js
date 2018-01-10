@@ -11,8 +11,10 @@ var mongo = require('mongodb').MongoClient;
 // The database name
 const dbName = "heroku_wwpzkm46";
 
+var importCred = require('./credentials.json');
+
 // Local environment port
-var url = "mongodb://heroku_wwpzkm46:96ichdg7jpbqvn7rj90nuaccvf@ds245277.mlab.com:45277/" + dbName;
+var url = importCred.database + dbName;
 
 
 // -----------------------
